@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Emissieregistratie | LMK</title>
+  <meta name="description" content="">
+  <meta name="author" content="Martin Kosterman">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  <!-- Javascript libraries -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
+  <script type="text/javascript" src="https://code.highcharts.com/modules/heatmap.js"></script>
+  <script type="text/javascript" src="https://code.highcharts.com/modules/treemap.js"></script>
+
+  <!-- Json data -->
+  <script type="text/javascript" src="js/Subgroepen.json"></script>
+  
+  <!-- Javascript CUSTOM -->
+  <script type="text/javascript" src="js/er-treemap.js"></script>
+  
+</head>
+<body>
+
+
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+  
+  <!-- Navigation -->
+  <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href="index.html" class="navbar-link">Intro</a></li>
+         
+          <li class="navbar-item"><a href="treemap.html" class="navbar-link">Treemap</a></li>
+          
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="row">
+      <div class="ten columns" style="margin-top: 10%">
+        <h4>Treemap</h4>
+        
+        <div id="container"></div>
+        
+       <table data-chart-type="treemap" class="chart treemap">
+<caption>AmmoniakPerDoelgroepPerSubdoelgroep</caption>
+<thead>
+<tr>
+<th scope="col">DOELGROEP</th>
+<th scope="col">SUBDOELGROEP</th>
+<th scope="col">2010</th>
+<th scope="col">2012</th>
+<th scope="col">2013</th>
+<th scope="col">2014</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th id="hdr_1_1">Afvalverwijdering</th>
+<th id="hdr_1_2">AVI's</th>
+<td data-value="58170.8" headers="hdr_1_1 hdr_1_2">58170,8</td>
+<td data-value="68288.7" headers="hdr_1_1 hdr_1_2">68288,7</td>
+<td data-value="53032" headers="hdr_1_1 hdr_1_2">53032</td>
+<td data-value="53032" headers="hdr_1_1 hdr_1_2">53032</td>
+</tr>
+<tr>
+<th id="hdr_2_1">Afvalverwijdering</th>
+<th id="hdr_2_2">Composteren</th>
+<td data-value="123" headers="hdr_2_1 hdr_2_2">235650</td>
+<td data-value="123" headers="hdr_2_1 hdr_2_2">235650</td>
+<td data-value="235650" headers="hdr_2_1 hdr_2_2">235650</td>
+<td data-value="235630" headers="hdr_2_1 hdr_2_2">235630</td>
+</tr>
+<tr>
+<th id="hdr_3_1">Afvalverwijdering</th>
+<th id="hdr_3_2">Overige afvalbedrijven</th>
+<td data-value="" headers="hdr_3_1 hdr_3_2"/>
+<td data-value="1597" headers="hdr_3_1 hdr_3_2">1597</td>
+<td data-value="2242.2" headers="hdr_3_1 hdr_3_2">2242,2</td>
+<td data-value="2242.2" headers="hdr_3_1 hdr_3_2">2242,2</td>
+</tr>
+<tr>
+<th id="hdr_4_1">Chemische Industrie</th>
+<th id="hdr_4_2">Chemische Industrie basisproducten</th>
+<td data-value="274341" headers="hdr_4_1 hdr_4_2">274341</td>
+<td data-value="435381" headers="hdr_4_1 hdr_4_2">435381</td>
+<td data-value="181891" headers="hdr_4_1 hdr_4_2">181891</td>
+<td data-value="181725" headers="hdr_4_1 hdr_4_2">181725</td>
+</tr>
+<tr>
+<th id="hdr_5_1">Chemische Industrie</th>
+<th id="hdr_5_2">Chemische Industrie bestrijdingsmiddelen</th>
+<td data-value="543" headers="hdr_5_1 hdr_5_2">543</td>
+<td data-value="778" headers="hdr_5_1 hdr_5_2">778</td>
+<td data-value="800.6" headers="hdr_5_1 hdr_5_2">800,6</td>
+<td data-value="798.6" headers="hdr_5_1 hdr_5_2">798,6</td>
+</tr>
+<tr>
+<th id="hdr_6_1">Chemische Industrie</th>
+<th id="hdr_6_2">Chemische Industrie kunstmeststoffen</th>
+<td data-value="461468" headers="hdr_6_1 hdr_6_2">461468</td>
+<td data-value="351268" headers="hdr_6_1 hdr_6_2">351268</td>
+<td data-value="460379" headers="hdr_6_1 hdr_6_2">460379</td>
+<td data-value="460379" headers="hdr_6_1 hdr_6_2">460379</td>
+</tr>
+<tr>
+<th id="hdr_7_1">Chemische Industrie</th>
+<th id="hdr_7_2">Chemische Industrie overig</th>
+<td data-value="2683" headers="hdr_7_1 hdr_7_2">2683</td>
+<td data-value="4638.2" headers="hdr_7_1 hdr_7_2">4638,2</td>
+<td data-value="2319.8" headers="hdr_7_1 hdr_7_2">2319,8</td>
+<td data-value="2319.8" headers="hdr_7_1 hdr_7_2">2319,8</td>
+</tr>
+<tr>
+<th id="hdr_8_1">Consumenten</th>
+<th id="hdr_8_2">Huishoudelijke processen</th>
+<td data-value="6412840" headers="hdr_8_1 hdr_8_2">6412840</td>
+<td data-value="6464020" headers="hdr_8_1 hdr_8_2">6464020</td>
+<td data-value="6478250" headers="hdr_8_1 hdr_8_2">6478250</td>
+<td data-value="6498050" headers="hdr_8_1 hdr_8_2">6498050</td>
+</tr>
+<tr>
+<th id="hdr_9_1">Consumenten</th>
+<th id="hdr_9_2">Productgebruik Consumenten</th>
+<td data-value="2935330" headers="hdr_9_1 hdr_9_2">2935330</td>
+<td data-value="4546550" headers="hdr_9_1 hdr_9_2">4546550</td>
+<td data-value="5208510" headers="hdr_9_1 hdr_9_2">5208510</td>
+<td data-value="5238120" headers="hdr_9_1 hdr_9_2">5238120</td>
+</tr>
+<tr>
+<th id="hdr_10_1">Energiesector</th>
+<th id="hdr_10_2">Opwekking electriciteit</th>
+<td data-value="15997" headers="hdr_10_1 hdr_10_2">15997</td>
+<td data-value="26011.3" headers="hdr_10_1 hdr_10_2">26011,3</td>
+<td data-value="30437" headers="hdr_10_1 hdr_10_2">30437</td>
+<td data-value="30437" headers="hdr_10_1 hdr_10_2">30437</td>
+</tr>
+<tr>
+<th id="hdr_11_1">Handel, Diensten en Overheid (HDO)</th>
+<th id="hdr_11_2">Energiegebruik en processen Handel, Diensten en Overheid (HDO)</th>
+<td data-value="929" headers="hdr_11_1 hdr_11_2">929</td>
+<td data-value="" headers="hdr_11_1 hdr_11_2"/>
+<td data-value="" headers="hdr_11_1 hdr_11_2"/>
+<td data-value="" headers="hdr_11_1 hdr_11_2"/>
+</tr>
+<tr>
+<th id="hdr_12_1">Handel, Diensten en Overheid (HDO)</th>
+<th id="hdr_12_2">Productgebruik Handel, Diensten en Overheid (HDO)</th>
+<td data-value="3582240" headers="hdr_12_1 hdr_12_2">3582240</td>
+<td data-value="3547800" headers="hdr_12_1 hdr_12_2">3547800</td>
+<td data-value="3555220" headers="hdr_12_1 hdr_12_2">3555220</td>
+<td data-value="3555220" headers="hdr_12_1 hdr_12_2">3555220</td>
+</tr>
+<tr>
+<th id="hdr_13_1">Landbouw</th>
+<th id="hdr_13_2">Kunstmest</th>
+<td data-value="10159600" headers="hdr_13_1 hdr_13_2">10159600</td>
+<td data-value="13686400" headers="hdr_13_1 hdr_13_2">13686400</td>
+<td data-value="13626300" headers="hdr_13_1 hdr_13_2">13626300</td>
+<td data-value="13639400" headers="hdr_13_1 hdr_13_2">13639400</td>
+</tr>
+<tr>
+<th id="hdr_14_1">Landbouw</th>
+<th id="hdr_14_2">Landbouwhuisdieren - overige dieren</th>
+<td data-value="3507620" headers="hdr_14_1 hdr_14_2">3507620</td>
+<td data-value="3452510" headers="hdr_14_1 hdr_14_2">3452510</td>
+<td data-value="3449670" headers="hdr_14_1 hdr_14_2">3449670</td>
+<td data-value="3565410" headers="hdr_14_1 hdr_14_2">3565410</td>
+</tr>
+<tr>
+<th id="hdr_15_1">Landbouw</th>
+<th id="hdr_15_2">Landbouwhuisdieren - pluimvee</th>
+<td data-value="14641000" headers="hdr_15_1 hdr_15_2">14641000</td>
+<td data-value="12418000" headers="hdr_15_1 hdr_15_2">12418000</td>
+<td data-value="11724400" headers="hdr_15_1 hdr_15_2">11724400</td>
+<td data-value="11707200" headers="hdr_15_1 hdr_15_2">11707200</td>
+</tr>
+<tr>
+<th id="hdr_16_1">Landbouw</th>
+<th id="hdr_16_2">Landbouwhuisdieren - rundvee</th>
+<td data-value="59064900" headers="hdr_16_1 hdr_16_2">59064900</td>
+<td data-value="54616700" headers="hdr_16_1 hdr_16_2">54616700</td>
+<td data-value="56123300" headers="hdr_16_1 hdr_16_2">56123300</td>
+<td data-value="61791700" headers="hdr_16_1 hdr_16_2">61791700</td>
+</tr>
+<tr>
+<th id="hdr_17_1">Landbouw</th>
+<th id="hdr_17_2">Landbouwhuisdieren - varkens</th>
+<td data-value="31793100" headers="hdr_17_1 hdr_17_2">31793100</td>
+<td data-value="26014100" headers="hdr_17_1 hdr_17_2">26014100</td>
+<td data-value="22823200" headers="hdr_17_1 hdr_17_2">22823200</td>
+<td data-value="21744100" headers="hdr_17_1 hdr_17_2">21744100</td>
+</tr>
+<tr>
+<th id="hdr_18_1">Landbouw</th>
+<th id="hdr_18_2">Processen - bodem en gewas</th>
+<td data-value="4363640" headers="hdr_18_1 hdr_18_2">4363640</td>
+<td data-value="3957830" headers="hdr_18_1 hdr_18_2">3957830</td>
+<td data-value="4151440" headers="hdr_18_1 hdr_18_2">4151440</td>
+<td data-value="4076690" headers="hdr_18_1 hdr_18_2">4076690</td>
+</tr>
+<tr>
+<th id="hdr_19_1">Landbouw</th>
+<th id="hdr_19_2">Productgebruik Landbouw</th>
+<td data-value="407199" headers="hdr_19_1 hdr_19_2">407199</td>
+<td data-value="437361" headers="hdr_19_1 hdr_19_2">437361</td>
+<td data-value="437361" headers="hdr_19_1 hdr_19_2">437361</td>
+<td data-value="437361" headers="hdr_19_1 hdr_19_2">437361</td>
+</tr>
+<tr>
+<th id="hdr_20_1">Overige industrie</th>
+<th id="hdr_20_2">Basismetaal</th>
+<td data-value="25281.9" headers="hdr_20_1 hdr_20_2">25281,9</td>
+<td data-value="31017.6" headers="hdr_20_1 hdr_20_2">31017,6</td>
+<td data-value="22835.1" headers="hdr_20_1 hdr_20_2">22835,1</td>
+<td data-value="22980.2" headers="hdr_20_1 hdr_20_2">22980,2</td>
+</tr>
+<tr>
+<th id="hdr_21_1">Overige industrie</th>
+<th id="hdr_21_2">Bouwmaterialenindustrie</th>
+<td data-value="377058" headers="hdr_21_1 hdr_21_2">377058</td>
+<td data-value="366084" headers="hdr_21_1 hdr_21_2">366084</td>
+<td data-value="283414" headers="hdr_21_1 hdr_21_2">283414</td>
+<td data-value="283890" headers="hdr_21_1 hdr_21_2">283890</td>
+</tr>
+<tr>
+<th id="hdr_22_1">Overige industrie</th>
+<th id="hdr_22_2">Metaalelektro</th>
+<td data-value="991.232" headers="hdr_22_1 hdr_22_2">991,232</td>
+<td data-value="5488.46" headers="hdr_22_1 hdr_22_2">5488,46</td>
+<td data-value="2134.72" headers="hdr_22_1 hdr_22_2">2134,72</td>
+<td data-value="2134.72" headers="hdr_22_1 hdr_22_2">2134,72</td>
+</tr>
+<tr>
+<th id="hdr_23_1">Overige industrie</th>
+<th id="hdr_23_2">Papier(waren)</th>
+<td data-value="9213" headers="hdr_23_1 hdr_23_2">9213</td>
+<td data-value="8819" headers="hdr_23_1 hdr_23_2">8819</td>
+<td data-value="8117" headers="hdr_23_1 hdr_23_2">8117</td>
+<td data-value="8118" headers="hdr_23_1 hdr_23_2">8118</td>
+</tr>
+<tr>
+<th id="hdr_24_1">Overige industrie</th>
+<th id="hdr_24_2">Textiel- en tapijtindustrie</th>
+<td data-value="13196" headers="hdr_24_1 hdr_24_2">13196</td>
+<td data-value="7883" headers="hdr_24_1 hdr_24_2">7883</td>
+<td data-value="8387" headers="hdr_24_1 hdr_24_2">8387</td>
+<td data-value="8513" headers="hdr_24_1 hdr_24_2">8513</td>
+</tr>
+<tr>
+<th id="hdr_25_1">Overige industrie</th>
+<th id="hdr_25_2">Voedings- en genotmiddelenindustrie</th>
+<td data-value="531493" headers="hdr_25_1 hdr_25_2">531493</td>
+<td data-value="413044" headers="hdr_25_1 hdr_25_2">413044</td>
+<td data-value="421806" headers="hdr_25_1 hdr_25_2">421806</td>
+<td data-value="421806" headers="hdr_25_1 hdr_25_2">421806</td>
+</tr>
+<tr>
+<th id="hdr_26_1">Verkeer en vervoer</th>
+<th id="hdr_26_2">Binnenscheepvaart</th>
+<td data-value="5509.05" headers="hdr_26_1 hdr_26_2">5509,05</td>
+<td data-value="6378.38" headers="hdr_26_1 hdr_26_2">6378,38</td>
+<td data-value="6269.11" headers="hdr_26_1 hdr_26_2">6269,11</td>
+<td data-value="6377.59" headers="hdr_26_1 hdr_26_2">6377,59</td>
+</tr>
+<tr>
+<th id="hdr_27_1">Verkeer en vervoer</th>
+<th id="hdr_27_2">Luchtvaart</th>
+<td data-value="2089.08" headers="hdr_27_1 hdr_27_2">2089,08</td>
+<td data-value="2218.85" headers="hdr_27_1 hdr_27_2">2218,85</td>
+<td data-value="2224.54" headers="hdr_27_1 hdr_27_2">2224,54</td>
+<td data-value="2300.24" headers="hdr_27_1 hdr_27_2">2300,24</td>
+</tr>
+<tr>
+<th id="hdr_28_1">Verkeer en vervoer</th>
+<th id="hdr_28_2">Mobiele werktuigen</th>
+<td data-value="7684.08" headers="hdr_28_1 hdr_28_2">7684,08</td>
+<td data-value="7704.5" headers="hdr_28_1 hdr_28_2">7704,5</td>
+<td data-value="7607.24" headers="hdr_28_1 hdr_28_2">7607,24</td>
+<td data-value="7607.24" headers="hdr_28_1 hdr_28_2">7607,24</td>
+</tr>
+<tr>
+<th id="hdr_29_1">Verkeer en vervoer</th>
+<th id="hdr_29_2">Railverkeer</th>
+<td data-value="334.083" headers="hdr_29_1 hdr_29_2">334,083</td>
+<td data-value="266.711" headers="hdr_29_1 hdr_29_2">266,711</td>
+<td data-value="279.955" headers="hdr_29_1 hdr_29_2">279,955</td>
+<td data-value="278.96" headers="hdr_29_1 hdr_29_2">278,96</td>
+</tr>
+<tr>
+<th id="hdr_30_1">Verkeer en vervoer</th>
+<th id="hdr_30_2">Visserij</th>
+<td data-value="1163.84" headers="hdr_30_1 hdr_30_2">1163,84</td>
+<td data-value="918.746" headers="hdr_30_1 hdr_30_2">918,746</td>
+<td data-value="893.48" headers="hdr_30_1 hdr_30_2">893,48</td>
+<td data-value="893.701" headers="hdr_30_1 hdr_30_2">893,701</td>
+</tr>
+<tr>
+<th id="hdr_31_1">Verkeer en vervoer</th>
+<th id="hdr_31_2">Wegverkeer - uitlaatgassen</th>
+<td data-value="4829450" headers="hdr_31_1 hdr_31_2">4829450</td>
+<td data-value="4437900" headers="hdr_31_1 hdr_31_2">4437900</td>
+<td data-value="4492480" headers="hdr_31_1 hdr_31_2">4492480</td>
+<td data-value="4156000" headers="hdr_31_1 hdr_31_2">4156000</td>
+</tr>
+<tr>
+<th id="hdr_32_1">Verkeer en vervoer</th>
+<th id="hdr_32_2">Zeescheepvaart NCP (inclusief ankerliggers)</th>
+<td data-value="11596.1" headers="hdr_32_1 hdr_32_2">11596,1</td>
+<td data-value="11574.6" headers="hdr_32_1 hdr_32_2">11574,6</td>
+<td data-value="10801.5" headers="hdr_32_1 hdr_32_2">10801,5</td>
+<td data-value="10801.5" headers="hdr_32_1 hdr_32_2">10801,5</td>
+</tr>
+<tr>
+<th id="hdr_33_1">Verkeer en vervoer</th>
+<th id="hdr_33_2">Zeescheepvaart stilliggend</th>
+<td data-value="2395.12" headers="hdr_33_1 hdr_33_2">2395,12</td>
+<td data-value="2602.51" headers="hdr_33_1 hdr_33_2">2602,51</td>
+<td data-value="2354.72" headers="hdr_33_1 hdr_33_2">2354,72</td>
+<td data-value="2354.72" headers="hdr_33_1 hdr_33_2">2354,72</td>
+</tr>
+<tr>
+<th id="hdr_34_1">Verkeer en vervoer</th>
+<th id="hdr_34_2">Zeescheepvaart varend op Nederlands grondgebied</th>
+<td data-value="2090.33" headers="hdr_34_1 hdr_34_2">2090,33</td>
+<td data-value="2281.68" headers="hdr_34_1 hdr_34_2">2281,68</td>
+<td data-value="1995.98" headers="hdr_34_1 hdr_34_2">1995,98</td>
+<td data-value="1995.98" headers="hdr_34_1 hdr_34_2">1995,98</td>
+</tr>
+</tbody>
+</table>
+
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
